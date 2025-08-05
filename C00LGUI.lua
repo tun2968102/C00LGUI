@@ -1,3 +1,6 @@
+-- Chờ game và PlayerGui load (giúp tránh lỗi khi dùng Delta)
+repeat task.wait() until game:IsLoaded()
+repeat task.wait() until game.Players.LocalPlayer and game.Players.LocalPlayer:FindFirstChild("PlayerGui")
 --[[
 	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
 ]]
